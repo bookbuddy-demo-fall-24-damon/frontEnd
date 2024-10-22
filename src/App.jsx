@@ -27,7 +27,7 @@ function App() {
         />
         Library App
       </h1>
-      {import.meta.env.VITE_API_BASE_URL}
+      {process.env.REACT_APP_BASE_URL}
       <Navigations
         token={token}
         setToken={setToken}
