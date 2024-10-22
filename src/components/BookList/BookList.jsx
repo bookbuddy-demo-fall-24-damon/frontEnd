@@ -1,7 +1,7 @@
 import React from "react";
 import BookCard from "../BookCard/BookCard";
 
-function BookList({ BookData }) {
+function BookList({ bookData }) {
   return (
     <div className="books_container">
       {bookData.map((book) => (
