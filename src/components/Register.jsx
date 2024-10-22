@@ -14,7 +14,7 @@ function Register({ token, setToken }) {
     e.preventDefault();
     try {
       const data = await axios.post(
-        `${import.meta.env.VITE_API_BASE_URL}/api/users/register`,
+        `${process.env.VITE_API_BASE_URL}/api/users/register`,
         newUser
       );
       console.log(data);

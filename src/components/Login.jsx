@@ -15,7 +15,7 @@ function Login({ token, setToken }) {
     e.preventDefault();
     try {
       const data = await axios.post(
-        `${import.meta.env.VITE_API_BASE_URL}/api/users/login`,
+        `${process.env.VITE_API_BASE_URL}/api/users/login`,
         loginData
       );
       console.log(data);

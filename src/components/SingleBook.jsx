@@ -8,7 +8,7 @@ function SingleBook({ token }) {
   const [book, setBook] = useState(null);
 
   useEffect(() => {
-    axios(`${import.meta.env.VITE_API_BASE_URL}/api/books/${bookid}`)
+    axios(`${process.env.VITE_API_BASE_URL}/api/books/${bookid}`)
       .then((data) => {
         console.log(data.data.book);
         setBook(data.data.book);

@@ -6,7 +6,7 @@ function Books() {
   const [bookData, setBookData] = useState([]);
 
   useEffect(() => {
-    axios(`${import.meta.env.VITE_API_BASE_URL}/api/books`)
+    axios(`${process.env.VITE_API_BASE_URL}/api/books`)
       .then((data) => {
         console.log(data.data.books);
         setBookData(data.data.books);
