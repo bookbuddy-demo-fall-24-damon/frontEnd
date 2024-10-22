@@ -27,7 +27,7 @@ function SingleBook({ token }) {
       <p>{book?.description}</p>
       {token && book?.available && <button>Check Out Book</button>}
       {token && !book?.available && <p>Book Already Checked Out</p>}
-      {!token && <button onClick={() => Navigate("/login")}>Login</button>}
+      {!token && <button onClick={() => navigate("/login")}>Login</button>}
     </div>
   );
 }
