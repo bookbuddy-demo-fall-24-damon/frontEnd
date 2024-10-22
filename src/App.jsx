@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import bookLogo from "./assets/books.png";
-import "./App.css";
 import Books from "./components/Books";
 import Account from "./components/Account";
 import Login from "./components/Login";
@@ -29,10 +28,6 @@ function App() {
         Library App
       </h1>
       {process.env.REACT_APP_BASE_URL}
-      <Navigations
-        token={token}
-        setToken={setToken}
-      />
       <Navigations
         token={token}
         setToken={setToken}
