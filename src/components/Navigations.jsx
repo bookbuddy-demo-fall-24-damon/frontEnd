@@ -6,7 +6,7 @@ function Navigations({ token, setToken }) {
   const handleLogout = () => {
     localStorage.removeItem("token");
     setToken(null);
-    Navigate("/login");
+    navigate("/login");
   };
 
   return (
