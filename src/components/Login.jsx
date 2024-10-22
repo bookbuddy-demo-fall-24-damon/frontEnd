@@ -56,7 +56,7 @@ function Login({ token, setToken }) {
         </label>
         <button>Login</button>
       </form>
-      {hasError && <p className="auth-error">{error}</p>}
+      {hasError && <p className="auth-error">{hasError}</p>}
       <p>
         Need an Account? Sign up <Link to="Register">Here</Link>
       </p>
